@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main() {
+     int grade;
+    printf("enter your rating\n");
+    scanf("%d",&grade);
+    
+    if( grade > 90 || grade ==100 || grade ==90){
+        printf("your rating is A\n");
+    }
+    else if ( grade > 80 && grade < 90 || grade ==80){
+         printf("your rating is B\n");
+    }
+else if(grade > 70 && grade < 80 || grade ==70) {
+    printf("your rating is C\n");
+}
+else if(grade > 60 && grade < 70 || grade ==60){
+     printf("your rating is D\n");
+}
+else if(grade < 70){
+     printf("your rating is F\n");
+}
+return 0;
+}
