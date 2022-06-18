@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main()
+{
+    int num;
+     printf("enter the nbumber\n");
+     scanf("%d",&num);
+     
+     if(num ==1){
+             printf(" the nbumber is 1");
+     }
+     else if(num ==2){
+             printf(" the nbumber is 2");
+     }
+     else if(num ==3){
+             printf(" the nbumber is 3");
+     }
+     else if(num ==4){
+             printf("the nbumber is 4");
+     }
+    else if(num ==5){
+             printf("the nbumber is 5");
+     }
+     else {
+          printf("number is not between 1 to 5");
+     }
+     return 0;
+}
