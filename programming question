@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main()
+{
+    int Hindi;
+    int English;
+    int Maths;
+    
+    
+    printf("enter the marks in Hindi\n");
+    scanf("%d",&Hindi);
+    
+     printf("enter the marks in English\n");
+    scanf("%d",&English);
+    
+     printf("enter the marks in Maths\n");
+     scanf("%d",&Maths);
+     float total = (Hindi+English+Maths)/3;
+   
+    
+   if(total<40 || (English<33) || (Hindi<33) || (Maths<33)){
+       printf("You are fail you have only %f percent", total);
+   }
+   else{
+         printf("Congrats!!!!!!! you are pass with  %f percent", total);
+   };
+         return 0;
+}
