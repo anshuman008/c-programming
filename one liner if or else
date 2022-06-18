@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main()
+{
+    int num;
+     printf("enter the nbumber\n");
+     scanf("%d",&num);
+
+    //one liner else if
+    (num < 50) ?  printf("a numer is less then 50\n") :  printf("a number is greater then 50\n");
+     return 0;
+}
