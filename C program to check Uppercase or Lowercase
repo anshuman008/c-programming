@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+     
+     // 97 -122 = a to z ASCIS Vlaues
+    char a;
+    
+     printf("enter the charecter\n");
+     scanf("%c",&a);
+     
+    if( (a>='a') && (a<='z') )
+    {
+         printf("%c is a lowercase\n",a); 
+    }
+    else if ( (a>='A') && (a<='Z') )
+    {
+         printf("%c is a uppercase\n",a); 
+    }
+    else {
+        printf("%c is an invalid input \n",a); 
+         printf("please enter any alphabet between a to Z\n"); 
+    }
+    
+    return 0;
+}
