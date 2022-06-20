@@ -1,0 +1,26 @@
+#include<stdio.h>
+int main()
+{
+int i =5;
+printf("the value of i is %d\n",++i);
+// i++; // phele increment fir print
+// ++i// phele print fir increment
+printf("the value of i2 is %d\n",i+=10);
+// --i phele decrement fir print
+// i--  phele print fir decrement 
+printf("the value of after i2 is %d\n",i+=10);
+// i+=10 i increament by 10 means i+10;
+// i*=10 i multilply by 10 i*10;
+// i/=10 i is divided by 10 i/10;
+// i%=10 i is divided by 10 and showing reminder ;
+
+//int i =10;
+// 
+// while(i<100)                while loop syntax
+//{
+//    i+=10;
+//    printf("%d\n",i);
+//}
+ 
+ return 0;
+}
