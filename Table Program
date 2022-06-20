@@ -1,0 +1,18 @@
+#include <stdio.h>  
+int main()  
+{  
+    int num;
+    int i=1;
+    
+    printf("Enter a number to generate the table ");
+    scanf("%d",&num);
+    
+    printf ("\n Table of %d \n ", num);  
+    
+    while(i<=10)
+    {
+        printf(" %d x %d = %d \n ",i,num,i*num);
+        i++;
+    }
+    return 0;  
+}
