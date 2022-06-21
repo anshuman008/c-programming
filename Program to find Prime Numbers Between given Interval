@@ -1,0 +1,39 @@
+#include <stdio.h>
+
+int main()
+{
+    int a;
+    int b;
+    int prime;
+    
+    printf("enter the lower value of interval: ");
+    scanf("%d",&a);
+    
+     printf("\nenter the upper value of interval: ");
+    scanf("%d",&b);
+    
+       printf("\nprime numbers between %d and %d are : ",a,b);
+
+    
+    
+    for(int i=a; i<=b; i++){
+        
+        if(i ==0||i==1)
+        continue;
+        prime = 0;
+        
+        for(int j =2 ; j<=b ;j++){
+            
+            if(i%j == 0)
+            prime =1;
+            break;
+        }
+        if(prime==0){
+            printf("%d ",i);
+        }
+        
+        
+    }
+
+    return 0;
+}
