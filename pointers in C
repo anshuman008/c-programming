@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    int a=92;
+    int*j=&a; // j is now store the value of a
+    
+    printf("the value of i is %d\n",a);
+    printf("the value of i is %d\n",*j);
+    printf("the adress of i is %u\n",&a);
+    printf("the adress of i is %u\n",j);
+    printf("the adress of j is %u\n",&j);
+    printf("the value of j is %u\n",*(&j));
+      
+      
+    return 0;
+}
