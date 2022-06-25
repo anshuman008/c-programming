@@ -1,0 +1,17 @@
+#include <stdio.h>
+float farenheit(float c);
+int main() {
+    float c;
+    
+    printf("enter the teperature in celsius:\n");
+    scanf("%f",&c);
+    
+    printf(" teperature in farenheit is : %.1f°F", farenheit(c));
+    return 0;
+}
+float farenheit(float c){
+    
+    float result;
+    result = c*9/5+32;
+    return result;
+}
