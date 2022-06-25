@@ -1,0 +1,19 @@
+#include <stdio.h>
+float newton(float mass);
+int main() {
+    
+    float m;
+    printf("enter the value of mass in kg:\n");
+    scanf("%f",&m);
+    
+    printf("the value of force in newton is : %.2f\n",newton(m));
+    
+    return 0;
+}
+float newton(float mass){
+    float result;
+    result = mass*9.81;
+    return result;
+}
+
+
