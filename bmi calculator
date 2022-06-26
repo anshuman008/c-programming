@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+int main() {
+    float height;
+    float weight;
+    float bmi;
+    float real;
+    float foot;
+ 
+    printf("enter your height in foot:\n");
+    scanf("%f",&height);
+    
+      printf("enter your weight :\n");
+    scanf("%f",&weight);
+    
+    foot=height/3.28;
+    bmi=(foot*foot);
+    real=weight/bmi;
+    
+    printf(" BMI index is :  %.2f\n",real);
+    
+    if(real<18.5){
+        printf("you are underweight \n");
+    }
+    else if( (real>=18.5) && (real<=24.9) ){
+        printf("you have normalweight smartyy\n");
+    }
+     else if ( (real>=25) && (real<=29.9) ){
+        printf("you are overweight \n");
+    }
+     else if(real>=30){
+        printf("you are Obesity \n");
+    }
+    return 0;
+
+}
