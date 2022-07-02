@@ -1,0 +1,23 @@
+#include <stdio.h>
+void sumandavg(int a, int b, int *sum, float *avg){
+    *sum = a+b;
+    *avg = (float)*sum/2;
+}
+int main() {
+    int sum;
+    float avg;
+    int i, j;
+    
+    printf("enter the first number : ");
+    scanf("%d",&i);
+    
+       printf("enter the second number: ");
+    scanf("%d",&j);
+    
+    sumandavg(i,j,&sum,&avg);
+    
+    printf("the sum of value is %d\n",sum);
+     printf("the avg of value is %f\n",avg);
+    
+    return 0;
+}
