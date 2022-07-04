@@ -1,0 +1,26 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+ 
+//  int a=10;
+//  int*ptr = &a;
+//  printf("the value of ptr is : %u\n",ptr); // int store genreally 4 bites of strage
+//  ptr++;
+//  printf("the value of ptr is : %u\n",ptr);
+ 
+ 
+//   char a=10;
+//  char*ptr = &a;
+//  printf("the value of ptr is : %u\n",ptr); // char store genreally 1 bites of strage
+//  ptr++;
+//  printf("the value of ptr is : %u\n",ptr);
+ 
+  float a=10;
+ float*ptr = &a;
+ printf("the value of ptr is : %u\n",ptr);
+ ptr++;   //ptr++ increament of 1                               //  float store genreally 4 bites of strage
+ printf("the value of ptr is : %u\n",ptr);
+ 
+ 
+    return 0;
