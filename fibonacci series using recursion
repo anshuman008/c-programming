@@ -1,0 +1,21 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+int fib(int n);
+int main(){
+    int n;
+    printf("enter the number 0f elements: \n");
+    scanf("%d",&n);
+    
+    printf("0\n1\n");
+    fib(n-2);
+}
+fib(int n){
+    if(n>0){
+    static a=0,b=1,c;
+    c=a+b;
+    a=b;
+    b=c;
+    printf("%d\n",c);
+    fib(n-1);
+    }
+}
