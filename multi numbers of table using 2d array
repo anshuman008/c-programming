@@ -1,0 +1,29 @@
+
+#include <stdio.h>
+
+int main() {
+    int n;
+    int f;
+    int table[n][10];
+    
+    printf("Enter how many tables you want to print\n");
+    scanf("%d",&n);
+    
+    for(int i=0; i<n ; i++){
+        
+            printf("Enter the %dth number you want to print\n",i+1);
+            scanf("%d",&table[i][f]);
+    }
+    
+    
+      for(int i=0; i<n ; i++){
+         printf("table of %d :\n",i+1);
+         
+        for(int j =0; j<10;j++){
+            printf("%d x %d = %d\n",table[i][f],j+1,table[i][f]*(j+1));
+        }
+        printf("\n*********************************************\n");
+    }
+    
+    return 0;
+}
