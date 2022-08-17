@@ -1,0 +1,44 @@
+#include<stdio.h>
+int main(){
+    
+     
+    float a,b;
+    char symbol;
+    
+    printf("enter the symbol (+, -, *, /): ");
+    scanf("%c",&symbol);
+   
+   
+    printf("enter the value of a \n");
+    scanf("%f",&a);
+    
+     printf("enter the value of b\n");
+    scanf("%f",&b);
+    
+
+   switch(symbol)
+   {
+       
+       case '+':
+       printf("%.1f + %.1f = %.1f", a, b, a+b );
+       break;
+       
+        case '-':
+       printf("%.1f- %.1f = %.1f", a, b , a-b);
+       break;
+       
+        case '*':
+       printf("%.1f * %.1f = %.1f", a , b , a*b);
+       break;
+       
+        case '/':
+       printf("%.1f * %.1f = %.1f", a , b , a/b);
+       break;
+       
+       // operator doesn't match any case constant +, -, *, /
+        default:
+            printf("Error! operator is not correct");
+    }
+       
+    return 0;
+}
